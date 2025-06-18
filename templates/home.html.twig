@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil — Ecoride | Covoiturage dans votre région{% endblock %}
+
+{% block body %}
+    <header class="hero">
+        <h1>Ecoride</h1>
+        <p>Partagez des trajets facilement écologique.</p>
+        <a href="{{ path('app_covoiturage') }}" class="btn-primary">Rechercher un trajet</a>
+    </header>
+
+    <section class="features">
+        <article>
+            <h2>Pour les passagers</h2>
+            <p>Trouvez des trajets près de chez vous.</p>
+        </article>
+        <article>
+            <h2>Pour les conducteurs</h2>
+            <p>Proposez vos trajets au quotidien ou ponctuellement.</p>
+        </article>
+        <article>
+            <h2>Mixte</h2>
+            <p>Mettez-vous en relation selon vos besoins.</p>
+        </article>
+    </section>
+{% endblock %}
